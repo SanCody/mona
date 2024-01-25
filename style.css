@@ -1,0 +1,170 @@
+*{
+    /* border: 1px red solid; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+.container-fluid{
+    padding: 0;
+}
+#home #nav img{
+    height: 40px;
+}
+#home{
+    background-image: url(img/p\ \(2\).JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.473);
+}
+#slogan{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    size: 1%;
+}
+#trendings{
+    min-height: 100vh;
+}
+#trendings h1{
+    text-indent: 5%;
+}
+#trendings #slide{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#trendings #inner-slide{
+    /* height: 100%; */
+    width: 92%;
+}
+
+
+#offers{
+    height: 100%;
+}
+#offers #offers-container{
+    min-height: 95vh;
+}
+#offers #inner-offers{
+    min-height: 95vh;
+}
+#offers #inner-offers > #cards{
+    margin: 3%;
+    width: 40%;
+    height: 0%;
+}
+
+#about #about-container{
+    min-height: 92vh;
+}
+#about #inner-about{
+    background-color: #f7c4e29d;
+    min-height: 64vh;
+    width: 92%;
+}
+
+#contact{
+    min-height: 100vh;
+}
+#contact h1{
+    text-indent: 5%;
+}
+#contact #contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+#contact #contact-inner{
+    width: 92%;
+    background-color: #f7c4e29d;
+    padding: 20px; 
+}
+#contact #icons{
+    display: flex;
+    justify-content: space-around;
+}
+#contact #contact-container #contact-inner #map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh; /*50vh*/
+    width: 100%;box-sizing: border-box;
+}
+#contact #map iframe{
+    height: 75%;
+    width: 85%;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transform: translatex(20%);
+    transition: 1s;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    #home{
+        background-image: url(img/p\ \(1\).JPG);
+    }
+    #trendings #inner-slide{
+        /* height: 100%; */
+        width: 50%;
+    }
+    #about #inner-about{
+        font-size: 2vw !important;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #home{
+        background-image: url(img/p\ \(1\).JPG);
+    }
+    #trendings #inner-slide{
+        /* height: 100%; */
+        width: 30%;
+    }
+    #offers #offers-container #inner-offers #cards{
+        margin-inline: 5%;
+        width: 25%;
+    }
+    #offers #offers-container #inner-offers #cards #card-body #card-title{
+        font-size: 25px !important;
+        
+    }
+    #offers #offers-container #inner-offers #cards #card-body #card-text{
+        font-size: 25px !important; 
+    }
+    #about #about-container img{
+        width: 18% !important;
+    }
+    #about #inner-about{
+        min-height: 55vh;
+        font-size: 2vw !important;
+    }
+    #contact {
+        min-height: 95vh;
+    }
+    #contact #contact-container {
+        min-height: 75vh;
+    }
+    #contact #contact-inner p{
+        font-size: 2vw !important;
+    }
+}
