@@ -110,7 +110,7 @@
 
 .hidden {
     opacity: 0;
-    transform: translatex(20%);
+    transform: translatex(10%);
     transition: 1s;
 }
 .visible {
