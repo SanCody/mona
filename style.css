@@ -8,6 +8,24 @@
 .container-fluid{
     padding: 0;
 }
+#whatsapp{
+    position: fixed;
+    width:57px;
+    height:57px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    z-index:100;
+}
+#whatsapp:hover {
+    color: #25d366;
+    background-color: transparent;
+  }
+
 #home #nav img{
     height: 40px;
 }
@@ -105,28 +123,6 @@
     height: 75%;
     width: 85%;
 }
-
-
-
-#whatsapp{
-    position: fixed;
-    width:57px;
-    height:57px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:35px;
-    z-index:100;
-}
-#whatsapp:hover {
-    color: #25d366;
-    background-color: transparent;
-  }
-
-
 
 .hidden {
     opacity: 0;
