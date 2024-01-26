@@ -111,19 +111,19 @@
 #whatsapp{
     position: fixed;
     width:57px;
-	height:57px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
+    height:57px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
     font-size:35px;
     z-index:100;
 }
 #whatsapp:hover {
     color: #25d366;
-    background-color: transparent
+    background-color: transparent;
   }
 
 
