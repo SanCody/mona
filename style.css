@@ -149,7 +149,11 @@ html{
     transform: translateY(0);
 }
 
-
+@media only screen and (max-width: 767px) {
+    #home {
+        background-attachment: scroll; /* Change to 'scroll' for mobile */
+    }
+}
 
 @media only screen and (min-width: 768px) and (max-width:1023px){
     #home{
