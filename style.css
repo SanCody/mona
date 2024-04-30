@@ -89,9 +89,9 @@
     width: 92%;
 }
 
-#contact{
-    /* min-height: 92vh; */
-}
+/* #contact{
+     min-height: 92vh;
+} */
 #contact h1{
     text-indent: 5%;
 }
@@ -213,4 +213,18 @@
     #contact #contact-inner p{
         font-size: 2vw !important;
     }
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+}
+
+#content {
+  display: none;
 }
