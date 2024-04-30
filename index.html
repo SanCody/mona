@@ -15,10 +15,11 @@
 
 <body style="color: #212121;">
 
+  <div id="loader" class="spinner-border text-info"></div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="content">
 
-    <a href="https://wa.me/+918778272645" >
+    <a href="https://wa.me/8778272645" >
       <i class="bi bi-whatsapp" id="whatsapp"></i>
     </a>
     
@@ -103,7 +104,7 @@
       <div id="offers-container" class="">
         <div id="inner-offers" class="d-flex flex-wrap justify-content-around">
           <div id="cards" class="card p-1 shadow hidden">
-            <a href="https://sancody.github.io/pista-collection/">
+            <a href="offers/pista/index.html">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner rounded">
                 <div class="carousel-item active">
@@ -124,6 +125,7 @@
           </a>
           </div>
           <div id="cards" class="card p-1 shadow hidden">
+            <a href="offers/aishu/index.html">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner rounded s">
                 <div class="carousel-item active">
@@ -144,6 +146,7 @@
               <p class="card-title" id="card-title" style="font-size: 5vw; word-spacing: 2px;">Aishu Collection</p>
                 <p class="card-text" id="card-text" style="font-size: 5vw;">&#8377<span id="off-rate">1599</span> <del><small id="rate">2000</small></del><br> <small id="off-percent" style="color:green;"></small></p>
             </div>
+            </a>
           </div>
           <div id="cards" class="card p-1 shadow hidden">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -215,6 +218,24 @@
 
 
   </div>
+
+  <script>
+    // loading screen
+    var myVar;
+    document.addEventListener("DOMContentLoaded", function() {
+      myFunction();
+    });
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
+  </script> 
+
   <script>
     // animations
      const observer = new IntersectionObserver((entries) => {
@@ -245,6 +266,7 @@
       offPercentElements[i].innerHTML = z+'% off';
     }
   </script>
+
 </body>
 
 </html>
